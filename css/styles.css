@@ -95,6 +95,8 @@ button {
 .show {
   color: #000;
   background-color: #76CE82;
+  animation: rotation;
+  animation-duration: .4s;
 }
 
 /* Keyboard */
@@ -160,4 +162,13 @@ button {
 
 .lose a {
   color: var(--color-lose);
+}
+
+@-webkit-keyframes rotation {
+  from {
+      -webkit-transform: rotate(0deg);
+  }
+  to {
+      -webkit-transform: rotate(359deg);
+  }
 }
